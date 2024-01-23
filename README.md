@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Capstone Project -1 | Super App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0%3A1&t=9rG7ihgvKc8kMCR8-0
 
-## Available Scripts
+## Checklist-1
 
-In the project directory, you can run:
+- [ ]  Create a new repo on GitHub and clone it on your local machine
+- [ ]  Create your react boilerplate using the create-react-app command
+- [ ]  Add title to you react app
+- [ ]  push your code to github with the message “boilerplate react setup”
+- [ ]  Figure out the components and pages in your React app
+- [ ]  create a registration page for super app
+    - [ ]  make sure that all fields are filled before you register
+    - [ ]  make sure that the terms and conditions are accepted
+    - [ ]  If any field is missing, show error below the field with red color
+    - [ ]  After the registration data is filled, you need to save the data in localstorage
+- [ ]  push your code to GitHub with the message “added registration page”
 
-### `npm start`
+## Checklist-2
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [ ]  before you get started here now you need to define two routes for your app
+    - [ ]  register route
+    - [ ]  select category route
+- [ ]  push your code to github with message “added routing”
+- [ ]  create select category page for entertainment page
+    - [ ]  user can select multiple categories(min 3 categories required)
+    - [ ]  user can select and un-select the category by clicking close button(x)
+- [ ]  after the user have selected the category you need to store the data in local storage of your browser
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<aside>
+💡 Local Storage Reference https://www.youtube.com/watch?v=HTSAJna3X8c
 
-### `npm test`
+</aside>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [ ]  make sure that you are able only go to next page once you select the category
+- [ ]  push your code to github with message “added category page”
 
-### `npm run build`
+## Checklist-3
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ]  create homepage which is divided in 3 sections
+    - [ ]  user profile card with category selected
+    - [ ]  to show the name of the user , email and username you will have to now save the details on the register page to before you start implementing this one make sure you add a feature to save the user details
+    
+    <aside>
+    💡 Once you will save the data in localstorage you need to pull the data from localstorage to show on the homepage
+    
+    </aside>
+    
+    - [ ]  push your code to github with message “added user profile card”
+    - [ ]  show todays date, time and weather using the wheather api
+    - [ ]  push your code to github with message “added wheather and date card”
+    - [ ]  show the news section using the news api
+    - [ ]  push your code to github with message “added news card”
+    
+    <aside>
+    💡 Wheather api: [http://weatherapi.com](http://weatherapi.com/)
+    News api: [http://newsapi.org](http://newsapi.org/)
+    
+    </aside>
+    
+    ## Checklist-4
+    
+    - [ ]  add all notes section in the homepage
+    - [ ]  save the notes in the localstorage
+    - [ ]  push your code to github with message “added all notes section”
+    - [ ]  add timer card
+        - [ ]  user can set a timer
+        - [ ]  play a tune on timer completion
+    - [ ]  push your code to github with message “added timer card”
+    
+    ## Checklist-5
+    
+    - [ ]  create a browse entertainment page
+    - [ ]  push your code to github with message “added browse entertainment page”
+    - [ ]  use the movies api to show data on the page
+    
+    <aside>
+    💡 https://rapidapi.com/unogs/api/unogs
+    
+    </aside>
+    
+    - [ ]  push your code to github with message “add movies api”
+    - [ ]  toggle between browse entertainment page and homepage
+    - [ ]  push your code to github with message “added toggle between browse and homepage”
