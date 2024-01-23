@@ -1,0 +1,16 @@
+.weather_container {
+  background-color: #101744;
+  width: 520px;
+  height: 160px;
+  border-radius: 20px;
+}
+.date {
+  background:#FF4ADE;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  width: 520px;
+  height: 6vh;
+  border-radius: 20px 20px 0 0;
+}

@@ -1,0 +1,43 @@
+.profile_container{
+    background-color: #5746EA;
+    width: 480px;
+    height: 265px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+}
+.user_info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.profile_details{
+    padding: 5x;
+}
+.profile_info{
+    line-height: 10px;
+}
+.profile_name{
+    font-size: 20px;
+    line-height: 22px;
+}
+.profile_email{
+    font-size: 20px;
+}
+.profile_username{
+    font-size: 40px;
+    font-weight: 800;
+}
+.genre_btn{
+    background-color: #9F94FF;
+    border: none;
+    outline: none;
+    width: 95px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 8px;
+    color: #ffffff;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+}

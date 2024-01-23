@@ -1,0 +1,25 @@
+.genre_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  cursor: pointer;
+}
+.genre_box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  width: 900px;
+  cursor: pointer;
+}
+
+.selected:hover {
+  
+  border: 1px #11B800 solid;
+  
+}
+
+.genre_image {
+  max-width: 100%;
+  max-height: 100px;
+  margin-bottom: 10px;
+}
