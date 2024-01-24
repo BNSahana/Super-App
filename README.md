@@ -1,6 +1,6 @@
 # Capstone Project -1 | Super App
 
-Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0%3A1&t=9rG7ihgvKc8kMCR8-0
+
 
 ## Checklist-1
 
