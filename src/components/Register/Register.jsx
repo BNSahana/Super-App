@@ -5,7 +5,7 @@ import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
 import { useNavigate } from "react-router-dom";
 
-const Register = () => {
+const Register = ({setUserRegistered}) => {
   const navigate = useNavigate();
 
   // State to store user inputs
@@ -100,6 +100,7 @@ const Register = () => {
     if (validateForm()) {
       // Save data to localStorage
       localStorage.setItem("Form Data", JSON.stringify(formData));
+      setUserRegistered(true)
       navigate("/genre");
       setSubmitted(true);
     }

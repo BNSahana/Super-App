@@ -6,10 +6,12 @@ import { useNavigate } from "react-router-dom";
 import ListOfMovies from "./ListOfMovies";
 
 const Movies = () => {
+  console.log("hello")
   let movies = JSON.parse(localStorage.getItem("Genre"));
   const navigate = useNavigate();
   const toggleProfile = () => {
-    navigate("/");
+    console.log("toggle")
+    navigate("/home", { replace: true });
   };
 
   return (
@@ -36,9 +38,7 @@ const Movies = () => {
         Entertainment according to your choice
       </div>
       <div className={styles.ListofGenre}>
-        {movies.map((movie) => (
-          <ListOfMovies genre={movie} />
-        ))}
+      <ListOfMovies/>
       </div>
     </div>
   );

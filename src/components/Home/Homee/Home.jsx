@@ -6,10 +6,11 @@ import Notes from "../Notes/Notes";
 import News from "../News/News";
 import Clock from "../Clock/Clock";
 import { useNavigate } from "react-router-dom";
-const Home = () => {
+const Home = ({setHomeVisited}) => {
   const navigate = useNavigate()
 
   const handleBrowse = () =>{
+    setHomeVisited(true)
     navigate("/movies")
   } 
   return (

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ListOfMovies.module.css";
+import { getMoviesGenres } from "../../api/movies";
 
-const ListOfMovies = ({ genre }) => {
-  const [movies, setMovies] = useState([]);
+const ListOfMovies = () => {
+  /*const [movies, setMovies] = useState([]);
   console.log(movies);
 
   useEffect(() => {
@@ -25,7 +26,7 @@ const ListOfMovies = ({ genre }) => {
         // Assuming primaryImage is an object with a property 'url'
         const formattedMovies = data.results.splice(4, 4).map((movie) => ({
           ...movie,
-          primaryImage: movie?.primaryImage?.url || null,
+          primaryImage: movie.primaryImage.url || null,
         }));
         setMovies(formattedMovies);
       } catch (error) {
@@ -35,16 +36,39 @@ const ListOfMovies = ({ genre }) => {
     };
 
     fetchMovies();
-  }, [genre]);
+  }, [genre]);*/
+
+  console.log("hello");
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    fetchMoviesDetails();
+  }, []);
+
+  const fetchMoviesDetails = async () => {
+    const result = await getMoviesGenres("drama");
+    console.log(result);
+    setMovies(result.Search);
+  };
 
   return (
     <div>
-      <p className={styles.heading}>{genre}</p>
+      {movies.map((movie) => {
+        <div style={{ color: "white" }}>{movie.title}</div>;
+      })}
+    </div>
+  );
+};
+
+export default ListOfMovies;
+
+{
+  /* <p className={styles.heading}>{genre}</p>
       <div style={{ display: "flex", overflow: "hidden", marginLeft: "2vw" }}>
         {movies.map((movie, idx) => {
           return (
             <div key={idx} style={{ width: "20vw", margin: "2vw" }}>
-              {movie?.primaryImage?.url ? (
+              {movie.primaryImage.url ? (
                 <img
                   src={movie.primaryImage.url}
                   style={{
@@ -61,9 +85,5 @@ const ListOfMovies = ({ genre }) => {
             </div>
           );
         })}
-      </div>
-    </div>
-  );
-};
-
-export default ListOfMovies;
+      </div> */
+}

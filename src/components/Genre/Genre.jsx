@@ -127,7 +127,7 @@ const Default_genres = [
   },
 ];
 //console.log(Default_genres);
-const Genre = () => {
+const Genre = ({setMoviesGenreVisited}) => {
   const navigate = useNavigate();
   const [selectedGenres, setSelectedGenres] = useState([]);
   const [lengthError, setLengthError] = useState(false);
@@ -157,6 +157,7 @@ const Genre = () => {
       return;
     }
     localStorage.setItem("Genre", JSON.stringify(selectedGenres));
+    setMoviesGenreVisited(true)
     navigate("/home");
   };
 
